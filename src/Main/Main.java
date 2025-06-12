@@ -28,6 +28,7 @@ public class Main {
         Estudiante es2 = new Estudiante("Juan", 19);
         Estudiante es3 = new Estudiante("Ardanny", 19);
         Estudiante es4 = new Estudiante("Brandon", 19);
+        Estudiante es5 = new Estudiante("Esteban", 10);
 
         // Creo los objetos Curso Regular
         CursoRegular cr1 = new CursoRegular(d1, "Programacion desde cero", 35, 35.00, false, false);
@@ -39,8 +40,10 @@ public class Main {
         CursoCertificado cf2 = new CursoCertificado(d2, "POO", 35, 35.00,true, true, e1);
         CursoCertificado cf3 = new CursoCertificado(d1, "Bases de Datos", 35, 70.00,true, true, e1);
 
+        System.out.println("\n ### OBJETOS CREADOS CON LOS MÉTODOS SET ###");
+
         // Creacion de los 5 objetos mediante setters
-        // Objeto 1 -  Curso Regular
+        // Objeto 1 - Curso Regular
         Matricula m1 = new Matricula();
         m1.setEstudiante(es1);
         m1.setCursoRegular(cr1);
@@ -54,7 +57,7 @@ public class Main {
 
         // Objeto 3 -  Curso Regular
         Matricula m3 = new Matricula();
-        m3.setEstudiante(es3);
+        m3.setEstudiante(es5);
         m3.setCursoRegular(cr3);
         m3.imprimirMatriculaRegular();
 
@@ -70,8 +73,28 @@ public class Main {
         m5.setCursoCertificado(cf3);
         m5.imprimirMatriculaCertificado();
 
-        // Creacion de los 5 objetos mediante setters
+        System.out.println("\n ### OBJETOS CREADOS CON LOS CONSTRUCTORES ###");
 
+        // Creacion de los 5 objetos mediante los constructores
+        // Objeto 1 -  Curso Regular
+        Matricula m6 = new Matricula(es4, cr2);
+        m6.imprimirMatriculaRegular();
+
+        // Objeto 2 -  Curso Certificado
+        Matricula m7 = new Matricula(es4, cf2);
+        m7.imprimirMatriculaCertificado();
+
+        // Objeto 3 -  Curso Regular
+        Matricula m8 = new Matricula(es5, cr3);
+        m8.imprimirMatriculaRegular();
+
+        // Objeto 4 -  Curso Certificado
+        Matricula m9 = new Matricula(es1, cf3);
+        m9.imprimirMatriculaCertificado();
+
+        // Objeto 5 -  Curso Certificado
+        Matricula m10 = new Matricula(es3, cf1);
+        m10.imprimirMatriculaCertificado();
 
     }
 }

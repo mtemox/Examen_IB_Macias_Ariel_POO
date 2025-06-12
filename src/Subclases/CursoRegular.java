@@ -49,9 +49,9 @@ public class CursoRegular extends Curso {
     // Sobreescritura de mostrar informacion
     @Override
     public void mostrarInformacion() {
-        System.out.println("\n--- Curso Regular ---");
+        System.out.println("\n--- Información del Curso Regular ---");
         System.out.println("Curso: " + getNombreCurso());
-        System.out.println("¿Contiene certificado?" + (isCertificadoValido() ? "Si" : "No"));
+        System.out.println("¿Contiene certificado?: " + (isCertificadoValido() ? "Si" : "No"));
         System.out.println("Duración del curso: "+ getDuracionCurso());
         System.out.println("Precio base: " + getPrecioBase());
         System.out.println("Docente a cargo: " + getDocente().getNombre());

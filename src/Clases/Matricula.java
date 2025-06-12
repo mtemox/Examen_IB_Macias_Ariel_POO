@@ -54,13 +54,27 @@ public class Matricula {
 
     // Metodo para imprimir la matricula regular
     public void imprimirMatriculaRegular() {
-        estudiante.mostrarInformacion();
+        System.out.println("\n#### INFORMACIÓN DE LA MATRÍCULA ####");
+
+        if ((estudiante.getEdad() >= 13) && (estudiante.getEdad()<=60) ) {
+            estudiante.mostrarInformacion();
+        } else {
+            System.out.println("\nEL ESTUDIANTE NO CUMPLE CON LA EDAD REQUERIDA");
+        }
+
         cursoRegular.mostrarInformacion();
     }
 
     // Metodo para imprimir la matricula vertificado
     public void imprimirMatriculaCertificado() {
-        estudiante.mostrarInformacion();
+        System.out.println("\n#### INFORMACIÓN DE LA MATRÍCULA ####");
+
+        if ((estudiante.getEdad() >= 13) && (estudiante.getEdad()<=60) ) {
+            estudiante.mostrarInformacion();
+        } else {
+            System.out.println("\nEL ESTUDIANTE NO CUMPLE CON LA EDAD REQUERIDA");
+        }
+
         cursoCertificado.mostrarInformacion();
     }
 

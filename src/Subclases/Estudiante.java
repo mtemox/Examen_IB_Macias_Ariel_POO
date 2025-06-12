@@ -15,7 +15,7 @@ public class Estudiante extends Persona {
     // Metodo para mostrar informacion
     @Override
     public void mostrarInformacion() {
-        System.out.println("\n--- Informacion Estudiante ---");
+        System.out.println("\n--- Información Estudiante Inscrito ---");
         super.mostrarInformacion();
     }
 }
