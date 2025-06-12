@@ -73,9 +73,12 @@ public class Matricula {
             estudiante.mostrarInformacion();
         } else {
             System.out.println("\nEL ESTUDIANTE NO CUMPLE CON LA EDAD REQUERIDA");
+
+            cursoCertificado.mostrarInformacionSinEvaluacion();
         }
 
         cursoCertificado.mostrarInformacion();
+
     }
 
 

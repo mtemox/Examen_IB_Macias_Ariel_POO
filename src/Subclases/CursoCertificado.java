@@ -43,6 +43,20 @@ public class CursoCertificado extends CursoRegular{
         evaluacion.imprimirEvaluacion();
     }
 
+    public void mostrarInformacionSinEvaluacion() {
+        System.out.println("\n--- Información del Curso Certificado ---");
+        System.out.println("Curso: " + getNombreCurso());
+        System.out.println("¿Contiene certificado?: " + (isCertificadoValido() ? "Si" : "No"));
+        System.out.println("Duración del curso: "+ getDuracionCurso());
+        System.out.println("Precio base: " + getPrecioBase());
+        System.out.println("Docente a cargo: " + getDocente().getNombre());
+        System.out.println("¿Evaluación Continua?: " + (isEvaluacionContinua() ? "Si" : "No"));
+        System.out.println("¿Evaluación Final?: " + (isEvaluacionFinal() ? "Si" : "No"));
+        System.out.println("Precio Total: " + calcularCosto());
+
+        System.out.println("\nSIN ESTUDIANTE NO REGISTRA EVALUACIÓN FINAL");
+    }
+
     // Sobreescritura de calcular costo
 
     @Override

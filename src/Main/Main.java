@@ -63,7 +63,7 @@ public class Main {
 
         // Objeto 4 -  Curso Certificado
         Matricula m4 = new Matricula();
-        m4.setEstudiante(es1);
+        m4.setEstudiante(es5);
         m4.setCursoCertificado(cf2);
         m4.imprimirMatriculaCertificado();
 
