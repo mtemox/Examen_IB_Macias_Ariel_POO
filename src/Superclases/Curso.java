@@ -71,5 +71,6 @@ public class Curso {
         System.out.println("Precio base: " + getPrecioBase());
         System.out.println("Docente a cargo: " + getDocente().getNombre());
     }
-
 }
+
+

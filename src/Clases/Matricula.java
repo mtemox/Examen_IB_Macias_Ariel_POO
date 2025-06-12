@@ -71,15 +71,18 @@ public class Matricula {
 
         if ((estudiante.getEdad() >= 13) && (estudiante.getEdad()<=60) ) {
             estudiante.mostrarInformacion();
-        } else {
+
             System.out.println("\nEL ESTUDIANTE NO CUMPLE CON LA EDAD REQUERIDA");
 
             cursoCertificado.mostrarInformacionSinEvaluacion();
+
+        } else {
+
+            cursoCertificado.mostrarInformacion();
+            ;
         }
-
-        cursoCertificado.mostrarInformacion();
-
     }
-
-
 }
+
+
+

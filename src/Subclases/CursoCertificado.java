@@ -32,7 +32,7 @@ public class CursoCertificado extends CursoRegular{
         System.out.println("\n--- Información del Curso Certificado ---");
         System.out.println("Curso: " + getNombreCurso());
         System.out.println("¿Contiene certificado?: " + (isCertificadoValido() ? "Si" : "No"));
-        System.out.println("Duración del curso: "+ getDuracionCurso());
+        System.out.println("Duración del curso: "+ getDuracionCurso() + "h");
         System.out.println("Precio base: " + getPrecioBase());
         System.out.println("Docente a cargo: " + getDocente().getNombre());
         System.out.println("¿Evaluación Continua?: " + (isEvaluacionContinua() ? "Si" : "No"));
@@ -47,7 +47,7 @@ public class CursoCertificado extends CursoRegular{
         System.out.println("\n--- Información del Curso Certificado ---");
         System.out.println("Curso: " + getNombreCurso());
         System.out.println("¿Contiene certificado?: " + (isCertificadoValido() ? "Si" : "No"));
-        System.out.println("Duración del curso: "+ getDuracionCurso());
+        System.out.println("Duración del curso: "+ getDuracionCurso() + "h");
         System.out.println("Precio base: " + getPrecioBase());
         System.out.println("Docente a cargo: " + getDocente().getNombre());
         System.out.println("¿Evaluación Continua?: " + (isEvaluacionContinua() ? "Si" : "No"));
